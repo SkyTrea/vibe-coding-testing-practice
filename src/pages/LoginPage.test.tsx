@@ -105,7 +105,7 @@ describe('LoginPage', () => {
             await user.click(submitButton);
 
             expect(mockLogin).not.toHaveBeenCalled();
-            expect(screen.getByText('密碼必須包含英文字。。。。asjaflf 母和數字')).toBeInTheDocument();
+            expect(screen.getByText('密碼必須包含英文字母和數字')).toBeInTheDocument();
         });
     });
 
