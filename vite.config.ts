@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    host: '127.0.0.1',
+  },
   // 只在 production 使用 base path（GitHub Pages 部署）
   base: process.env.NODE_ENV === 'production' ? '/vibe-coding-testing-practice/' : '/',
   plugins: [react()],
